@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +15,10 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { ParkingComponent } from './views/parking/parking.component';
 import { ClientComponent } from './views/client/client.component';
+import { NavDirective } from './directives/nav.directive';
+import { ParkingCreateComponent } from './shared/parking/parking-create/parking-create.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,9 @@ import { ClientComponent } from './views/client/client.component';
     FooterComponent,
     NavComponent,
     ParkingComponent,
-    ClientComponent
+    ClientComponent,
+    NavDirective,
+    ParkingCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,9 @@ import { ClientComponent } from './views/client/client.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

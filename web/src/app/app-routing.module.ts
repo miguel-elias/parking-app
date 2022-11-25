@@ -1,13 +1,22 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './shared/header/header.component';
+import { ClientComponent } from './views/client/client.component';
 import { HomeComponent } from './views/home/home.component';
+import { ParkingComponent } from './views/parking/parking.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HeaderComponent
-}
+    component: HomeComponent
+  },
+  {
+  path: 'parking',
+    component: ParkingComponent
+  },
+  {
+  path: 'client',
+    component: ClientComponent
+  },
 ];
 
 @NgModule({

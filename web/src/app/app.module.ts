@@ -11,6 +11,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavComponent } from './shared/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import { ParkingComponent } from './views/parking/parking.component';
+import { ClientComponent } from './views/client/client.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import {MatListModule} from '@angular/material/list';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    ParkingComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,8 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

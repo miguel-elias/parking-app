@@ -4,6 +4,7 @@ import { ParkingCreateComponent } from './shared/parking/parking-create/parking-
 import { ClientComponent } from './views/client/client.component';
 import { HomeComponent } from './views/home/home.component';
 import { ParkingComponent } from './views/parking/parking.component';
+import { ClientCreateComponent } from './shared/client/client-create/client-create.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,11 @@ const routes: Routes = [
   {
     path: 'parking/create',
       component: ParkingCreateComponent
-    },
+  },
+  {
+      path: 'client/create',
+        component: ClientCreateComponent
+  }
 ];
 
 @NgModule({

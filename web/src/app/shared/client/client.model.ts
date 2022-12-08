@@ -1,8 +1,8 @@
 export interface Client {
   id?: number
-  nome: string
+  name: string
   email: string
-  telefone: string
+  phone: string
   parking: string
   apartment: string
   block: string

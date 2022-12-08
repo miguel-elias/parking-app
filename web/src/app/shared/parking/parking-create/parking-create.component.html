@@ -1,9 +1,46 @@
-<p>parking-create works!</p>
+<mat-card>
+  <mat-card-title>Nova Vaga</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Vaga de estacionamento"
+       [(ngModel)]="parking.parkingSpotNumber" name="parkingSpotNumber">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Placa do veículo"
+      [(ngModel)]="parking.licensePlateCar" name="licensePlateCar">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Marca do veículo"
+      [(ngModel)]="parking.brandCar" name="brandCar">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Modelo do Veículo"
+      [(ngModel)]="parking.modelCar" name="modelCar">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Cor do veículo>"
+      [(ngModel)]="parking.colorCar" name="colorCar">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nome do responsável"
+      [(ngModel)]="parking.licensePlateCar" name="">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Número do apartamento"
+      [(ngModel)]="parking.apartment" name="apartment">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Bloco"
+      [(ngModel)]="parking.block" name="block">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createParking()" color="primary">
+    Salvar
+  </button>
 
-<button mat-raised-button (click)="createParking()" color="primary">
-  Salvar
-</button>
+  <button mat-raised-button (click)="cancel()">
+    Cancelar
+  </button>
 
-<button mat-raised-button (click)="cancel()">
-  Cancelar
-</button>
+</mat-card>
+

@@ -11,17 +11,15 @@ import { Router } from '@angular/router';
 export class ParkingCreateComponent implements OnInit{
 
   parking: Parking = {
-    parkingSpotNumber: '2344',
-    licensePlateCar: 'www4455',
-    brandCar: 'gm',
-    modelCar: 'corsa sedan',
-    colorCar: 'prata',
-    responsibleName: 'Daniel san',
-    apartment: '253',
-    block: 'B',
+    parkingSpotNumber: '',
+    licensePlateCar: '',
+    brandCar: '',
+    modelCar: '',
+    colorCar: '',
+    responsibleName: '',
+    apartment: '',
+    block: '',
   }
-
-
 
   constructor(private parkingService: ParkingService,
      private router: Router) { }
@@ -30,7 +28,7 @@ export class ParkingCreateComponent implements OnInit{
   }
   createParking(): void {
     this.parkingService.create(this.parking).subscribe(() => {
-       this.parkingService.showMessage('Vaga criada com sucesso!')
+       this.parkingService.showMessage('Vaga inserida com sucesso!')
        this.router.navigate(['/parking'])
     })
 }

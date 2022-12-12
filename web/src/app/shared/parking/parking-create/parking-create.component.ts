@@ -16,6 +16,7 @@ export class ParkingCreateComponent implements OnInit{
     brandCar: '',
     modelCar: '',
     colorCar: '',
+    /* dataTime: '', */
     responsibleName: '',
     apartment: '',
     block: '',

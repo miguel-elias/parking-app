@@ -22,4 +22,8 @@ export class ParkingService {
   create(parking: Parking): Observable<Parking> {
     return this.http.post<Parking>(this.baseUrl, parking)
   }
+
+  // read(): Observable <Parking[]>
+
+
 }

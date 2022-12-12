@@ -23,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { ParkingDeleteComponent } from './shared/parking/parking-delete/parking-delete.component';
+import { ParkingReadComponent } from './shared/parking/parking-read/parking-read.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import {MatInputModule} from '@angular/material/input';
     ClientComponent,
     NavDirective,
     ParkingCreateComponent,
-    ClientCreateComponent
+    ClientCreateComponent,
+    ParkingDeleteComponent,
+    ParkingReadComponent
   ],
   imports: [
     BrowserModule,

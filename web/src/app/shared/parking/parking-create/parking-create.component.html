@@ -1,46 +1,62 @@
 <mat-card>
   <mat-card-title style="padding: 10px; padding-left: 10px;">Nova Vaga</mat-card-title>
-  <form>
-    <div fxLayout="row" fxLayoutAlign="space-around center" >
-    <mat-form-field class="form-field">
-      <mat-label>Vaga de Estacionamento</mat-label>
-      <input matInput placeholder="123"
-       [(ngModel)]="parking.parkingSpotNumber" name="parkingSpotNumber">
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Placa do veículo"
-      [(ngModel)]="parking.licensePlateCar" name="licensePlateCar">
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Marca do veículo"
-      [(ngModel)]="parking.brandCar" name="brandCar">
-    </mat-form-field>
-    </div>
-    <div fxLayout="row" fxLayoutAlign="space-around center" >
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Modelo do Veículo"
-      [(ngModel)]="parking.modelCar" name="modelCar">
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Cor do veículo>"
-      [(ngModel)]="parking.colorCar" name="colorCar">
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Nome do responsável"
-      [(ngModel)]="parking.licensePlateCar" name="">
-    </mat-form-field>
-    </div>
-    <div fxLayout="row" fxLayoutAlign="space-around center" >
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Número do apartamento"
-      [(ngModel)]="parking.apartment" name="apartment">
-    </mat-form-field>
-    <mat-form-field class="form-field">
-      <input matInput placeholder="Bloco"
-      [(ngModel)]="parking.block" name="block">
-    </mat-form-field>
-    </div>
-  </form>
+    <form>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Vaga de Estacionamento</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="parking.parkingSpotNumber" name="parkingSpotNumber">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Placa do Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="WWW-2325"
+        [(ngModel)]="parking.licensePlateCar" name="licensePlateCar">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Marca Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="VW"
+        [(ngModel)]="parking.brandCar" name="brandCar">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Modelo Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="Golf"
+        [(ngModel)]="parking.modelCar" name="modelCar">
+      </mat-form-field>
+    </form>
+    <form>
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Cor do Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="Azul"
+        [(ngModel)]="parking.colorCar" name="colorCar">
+      </mat-form-field>
+
+      <!-- <mat-form-field class="grupo-input-cadastro">
+        <input matInput placeholder="Data"
+        [(ngModel)]="parking.dataTime" name="dataTime">
+      </mat-form-field> falta implementar a questao do datatime-->
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Nome responsável</mat-label>
+        <input class="input-cadastro" matInput placeholder="Bill Gates"
+        [(ngModel)]="parking.responsibleName" name="responsibleName">
+      </mat-form-field>
+
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Número Apartamento</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="parking.apartment" name="apartment">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Bloco</mat-label>
+        <input class="input-cadastro" matInput placeholder="ABCD"
+        [(ngModel)]="parking.block" name="block">
+      </mat-form-field>
+    </form>
   <div class="button-row">
     <button mat-raised-button (click)="createParking()" color="primary">
       Salvar

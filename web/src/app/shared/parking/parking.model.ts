@@ -5,6 +5,7 @@ export interface Parking {
     brandCar: string
     modelCar: string
     colorCar: string
+    /* dataTime: string */
     responsibleName: string
     apartment: string
     block: string

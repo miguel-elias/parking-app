@@ -2,7 +2,6 @@ form {
     display:flex;
     flex-direction: row;
     margin-top: 5px;
-    margin-left: 5px;
 }
 
 .card-title {
@@ -18,7 +17,7 @@ form {
 
 .grupo-input-cadastro {
   display: flexbox;
-  margin: 15px 5px 15px 15px;
+  margin: 5px 5px 5px 20px;
 
 }
 

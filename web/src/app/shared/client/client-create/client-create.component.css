@@ -1,3 +1,7 @@
+.grupo-card-cadastro {
+  margin-top: 80px;
+}
+
 form {
     display:flex;
     flex-direction: row;

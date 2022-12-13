@@ -12,20 +12,24 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-  path: 'parking',
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'parking',
     component: ParkingComponent
   },
   {
-  path: 'client',
+    path: 'client',
     component: ClientComponent
   },
   {
     path: 'parking/create',
-      component: ParkingCreateComponent
+    component: ParkingCreateComponent
   },
   {
-      path: 'client/create',
-        component: ClientCreateComponent
+    path: 'client/create',
+    component: ClientCreateComponent
   }
 ];
 

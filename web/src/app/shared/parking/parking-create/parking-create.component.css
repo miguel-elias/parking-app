@@ -1,8 +1,15 @@
-form {
+
+.grupo-card-cadastro {
+  margin-top: 80px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+
+}
+
+/* form {
     display:flex;
     flex-direction: row;
-    margin-top: 5px;
-}
+} */
 
 .card-title {
     display: flex;

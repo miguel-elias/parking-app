@@ -9,7 +9,7 @@ import { Parking } from '../parking.model';
 })
 export class ParkingReadComponent implements OnInit {
 
-  parkings!: Parking[];
+  parkings?: Parking[];
 
   constructor(private parkingService: ParkingService) {}
 

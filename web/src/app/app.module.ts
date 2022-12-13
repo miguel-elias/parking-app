@@ -25,6 +25,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ParkingDeleteComponent } from './shared/parking/parking-delete/parking-delete.component';
 import { ParkingReadComponent } from './shared/parking/parking-read/parking-read.component';
+import { ClientReadComponent } from './shared/client/client-read/client-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { ParkingReadComponent } from './shared/parking/parking-read/parking-read
     ParkingCreateComponent,
     ClientCreateComponent,
     ParkingDeleteComponent,
-    ParkingReadComponent
+    ParkingReadComponent,
+    ClientReadComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,10 @@ import { ParkingReadComponent } from './shared/parking/parking-read/parking-read
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

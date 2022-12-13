@@ -1,8 +1,52 @@
-<p>client-create works!</p>
-<button mat-raised-button (click)="createClient()" color="primary">
-  Salvar
-</button>
+<mat-card>
+  <mat-card-title style="padding: 10px; padding-left: 10px;">Cadastro novo cliente</mat-card-title>
+    <form>
 
-<button mat-raised-button (click)="cancel()">
-  Cancelar
-</button>
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Nome</mat-label>
+        <input class="input-cadastro" matInput placeholder="Bill Gates"
+        [(ngModel)]="client.name" name="name">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>E-mail</mat-label>
+        <input class="input-cadastro" matInput placeholder="bill.gates@gmail.com"
+        [(ngModel)]="client.email" name="email">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Telefone</mat-label>
+        <input class="input-cadastro" matInput placeholder="61 3347-2122"
+        [(ngModel)]="client.phone" name="phone">
+      </mat-form-field>
+   </form>
+   <form>
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Vaga</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="client.parking" name="parking">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Apartamento</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="client.apartment" name="apartment">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Bloco</mat-label>
+        <input class="input-cadastro" matInput placeholder="ABC"
+        [(ngModel)]="client.block" name="block">
+      </mat-form-field>
+  </form>
+  <div class="button-row">
+    <button mat-raised-button (click)="createClient()" color="primary">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+      Cancelar
+    </button>
+  </div>
+</mat-card>
+

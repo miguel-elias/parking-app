@@ -11,12 +11,12 @@ import { Client } from '../client.model';
 export class ClientCreateComponent implements OnInit{
 
   client: Client = {
-    name: 'Miguel Elias Salomão Neto',
-    email: 'miguel.elias@gmail.com',
-    phone: '61 986011658',
-    parking: '7979',
-    apartment: '309',
-    block: 'A',
+    name: '',
+    email: '',
+    phone: '',
+    parking: '',
+    apartment: '',
+    block: '',
   }
 
   constructor(private clientService: ClientService,

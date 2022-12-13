@@ -9,7 +9,7 @@ import { Client } from './client.model';
 })
 export class ClientService {
 
-  baseUrl = "http://localhost:8080/client"
+  baseUrl = "http://localhost:8080/client-parking"
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
   showMessage(msg: string): void{

@@ -23,7 +23,8 @@ export class ParkingService {
     return this.http.post<Parking>(this.baseUrl, parking)
   }
 
-  // read(): Observable <Parking[]>
-
+   read(): Observable <Parking[]> {
+    return this.http.get<Parking[]>(this.baseUrl)
+   }
 
 }

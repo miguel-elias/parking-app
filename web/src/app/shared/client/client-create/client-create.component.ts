@@ -12,9 +12,10 @@ export class ClientCreateComponent implements OnInit{
 
   client: Client = {
     name: '',
+    cpf:'',
     email: '',
     phone: '',
-    parking: '',
+    // parking: '',
     apartment: '',
     block: '',
   }

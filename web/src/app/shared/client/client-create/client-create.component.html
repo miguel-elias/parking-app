@@ -9,23 +9,30 @@
       </mat-form-field>
 
       <mat-form-field class="grupo-input-cadastro">
+        <mat-label>CPF</mat-label>
+        <input class="input-cadastro" matInput placeholder="12345678900"
+        [(ngModel)]="client.cpf" name="cpf">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
         <mat-label>E-mail</mat-label>
         <input class="input-cadastro" matInput placeholder="bill.gates@gmail.com"
         [(ngModel)]="client.email" name="email">
       </mat-form-field>
-
+    </form>
+    <form>
       <mat-form-field class="grupo-input-cadastro">
         <mat-label>Telefone</mat-label>
         <input class="input-cadastro" matInput placeholder="61 3347-2122"
         [(ngModel)]="client.phone" name="phone">
       </mat-form-field>
-   </form>
-   <form>
-      <mat-form-field class="grupo-input-cadastro">
+
+
+      <!-- <mat-form-field class="grupo-input-cadastro">
         <mat-label>Vaga</mat-label>
         <input class="input-cadastro" matInput placeholder="123"
         [(ngModel)]="client.parking" name="parking">
-      </mat-form-field>
+      </mat-form-field> -->
 
       <mat-form-field class="grupo-input-cadastro">
         <mat-label>Apartamento</mat-label>

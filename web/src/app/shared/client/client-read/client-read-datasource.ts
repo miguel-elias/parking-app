@@ -8,30 +8,31 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 export interface ClientReadItem {
   name: string;
   id: number;
+  action: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: ClientReadItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {id: 1, name: 'Hydrogen', action:'editar, deletar'},
+  {id: 2, name: 'Helium', action:'editar, deletar'},
+  {id: 3, name: 'Lithium', action:'editar, deletar'},
+  {id: 4, name: 'Beryllium', action:'editar, deletar'},
+  {id: 5, name: 'Boron', action:'editar, deletar'},
+  {id: 6, name: 'Carbon', action:'editar, deletar'},
+  {id: 7, name: 'Nitrogen', action:'editar, deletar'},
+  {id: 8, name: 'Oxygen', action:'editar, deletar'},
+  {id: 9, name: 'Fluorine', action:'editar, deletar'},
+  {id: 10, name: 'Neon', action:'editar, deletar'},
+  {id: 11, name: 'Sodium', action:'editar, deletar'},
+  {id: 12, name: 'Magnesium', action:'editar, deletar'},
+  {id: 13, name: 'Aluminum', action:'editar, deletar'},
+  {id: 14, name: 'Silicon', action:'editar, deletar'},
+  {id: 15, name: 'Phosphorus', action:'editar, deletar'},
+  {id: 16, name: 'Sulfur', action:'editar, deletar'},
+  {id: 17, name: 'Chlorine', action:'editar, deletar'},
+  {id: 18, name: 'Argon', action:'editar, deletar'},
+  {id: 19, name: 'Potassium', action:'editar, deletar'},
+  {id: 20, name: 'Calcium', action:'editar, deletar'},
 ];
 
 /**

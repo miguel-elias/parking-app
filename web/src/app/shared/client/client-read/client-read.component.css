@@ -1,4 +1,9 @@
+
 .full-width-table {
-  margin-top: 80px;
   width: 100%;
+}
+
+button{
+  display: flexbox;
+  margin: 5px 5px 5px 950px;
 }

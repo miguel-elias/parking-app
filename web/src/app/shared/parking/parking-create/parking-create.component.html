@@ -1,0 +1,72 @@
+<div style="margin-top: 10px; margin-left: 8px; margin-right: 8px;" class= "mat-elevation-z8">
+<mat-card class="grupo-card-cadastro">
+  <mat-card-title style="padding-top: 8px; padding-left: 8px; padding-right: 8px;">Nova Vaga</mat-card-title>
+    <form>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Vaga de Estacionamento</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="parking.parkingSpotNumber" name="parkingSpotNumber">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Placa do Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="WWW-2325"
+        [(ngModel)]="parking.licensePlateCar" name="licensePlateCar">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Marca Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="VW"
+        [(ngModel)]="parking.brandCar" name="brandCar">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Modelo Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="Golf"
+        [(ngModel)]="parking.modelCar" name="modelCar">
+      </mat-form-field>
+    </form>
+    <form>
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Cor do Veículo</mat-label>
+        <input class="input-cadastro" matInput placeholder="Azul"
+        [(ngModel)]="parking.colorCar" name="colorCar">
+      </mat-form-field>
+
+      <!-- <mat-form-field class="grupo-input-cadastro">
+        <input matInput placeholder="Data"
+        [(ngModel)]="parking.dataTime" name="dataTime">
+      </mat-form-field> falta implementar a questao do datatime-->
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Nome responsável</mat-label>
+        <input class="input-cadastro" matInput placeholder="Bill Gates"
+        [(ngModel)]="parking.responsibleName" name="responsibleName">
+      </mat-form-field>
+
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Número Apartamento</mat-label>
+        <input class="input-cadastro" matInput placeholder="123"
+        [(ngModel)]="parking.apartment" name="apartment">
+      </mat-form-field>
+
+      <mat-form-field class="grupo-input-cadastro">
+        <mat-label>Bloco</mat-label>
+        <input class="input-cadastro" matInput placeholder="ABCD"
+        [(ngModel)]="parking.block" name="block">
+      </mat-form-field>
+    </form>
+  <div class="button-row">
+    <button mat-raised-button (click)="createParking()" color="primary">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+      Cancelar
+    </button>
+  </div>
+</mat-card>
+</div>
+

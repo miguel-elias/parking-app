@@ -1,0 +1,16 @@
+.sidenav {
+  background-color: #3F51B5;
+  width: 200px;
+}
+
+.grupo-label-nav {
+  padding-left: 5px;
+  vertical-align:sub;
+  color: #FFF;
+}
+
+.content {
+  padding: 15px;
+  background-color: #FFF;
+}
+

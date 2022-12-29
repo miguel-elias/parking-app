@@ -1,4 +1,4 @@
-import { Parking } from './../parking.model';
+import { Parking } from '../parking.model';
 import { ParkingService } from '../parking.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';

@@ -29,6 +29,9 @@ import { ClientReadComponent } from './components/client/client-read/client-read
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { MatSortModule } from '@angular/material/sort';
     ClientCreateComponent,
     ParkingDeleteComponent,
     ParkingReadComponent,
-    ClientReadComponent
+    ClientReadComponent,
+    ClientUpdateComponent,
+    LocalDateTimePipe
   ],
   imports: [
     BrowserModule,
@@ -62,9 +67,12 @@ import { MatSortModule } from '@angular/material/sort';
     FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatTabsModule
   ],
-  providers: [],
+  providers: [
+    LocalDateTimePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

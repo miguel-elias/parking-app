@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ParkingService } from '../parking.service';
 import { Parking } from '../parking.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-parking-read',
@@ -9,15 +10,19 @@ import { Parking } from '../parking.model';
 })
 export class ParkingReadComponent implements OnInit {
 
-  parkings?: Parking[];
+  parkings: Parking[]=[];
 
-  constructor(private parkingService: ParkingService) {}
+  constructor(private parkingService: ParkingService, private router: Router) {}
 
   ngOnInit(): void {
     this.parkingService.read().subscribe(parkings => {
       this.parkings = parkings
       console.log(parkings)
     })
+  }
+
+  navigateToParkingCreate(): void {
+    this.router.navigate(['/parking/create'])
   }
 
 }

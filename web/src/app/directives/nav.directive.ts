@@ -6,7 +6,7 @@ import { Directive, ElementRef } from '@angular/core';
 export class NavDirective {
 
   constructor(private el: ElementRef) {
-    el.nativeElement.style.color = '#FFF'
+    el.nativeElement.style.color = 'red'
   }
 
 }

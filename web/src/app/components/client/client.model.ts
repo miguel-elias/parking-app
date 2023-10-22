@@ -1,10 +1,9 @@
-export interface Client {
+export class Client {
   id?: number
-  name: string
-  cpf: string,
-  email: string
-  phone: string
-  // parking: string
-  apartment: string
-  block: string
+  name!: string;
+  cpf!: string;
+  email!: string;
+  phone!: string;
+  apartment!: string;
+  block!: string;
 }

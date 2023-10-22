@@ -1,16 +1,16 @@
 .grupo-card-home {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
-.title {
+.home .title {
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
-  margin-top: 10px;
+  margin-top: 70px;
   margin-left: 10px;
 }
 
-.subtitle {
+.home .subtitle {
   font-size: 1.1rem;
   margin-top: 10px;
   margin-left: 13px;

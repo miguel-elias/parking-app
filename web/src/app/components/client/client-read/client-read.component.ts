@@ -1,36 +1,33 @@
-import { AfterViewInit, Component, ViewChild, OnInit } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
-import { ClientReadDataSource, ClientReadItem } from './client-read-datasource';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ClientService } from '../client.service';
+import { Client } from '../client.model';
 
 @Component({
   selector: 'app-client-read',
   templateUrl: './client-read.component.html',
   styleUrls: ['./client-read.component.css']
 })
-export class ClientReadComponent implements AfterViewInit, OnInit {
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-  @ViewChild(MatSort) sort!: MatSort;
-  @ViewChild(MatTable) table!: MatTable<ClientReadItem>;
-  dataSource: ClientReadDataSource;
+export class ClientReadComponent implements OnInit {
 
-  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'action'];
+  clients!: Client[];
 
-  constructor(private router: Router) {
-    this.dataSource = new ClientReadDataSource();
-  }
+  constructor(public clientService: ClientService, private router: Router) { }
 
-  ngAfterViewInit(): void {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
-    this.table.dataSource = this.dataSource;
-  }
+ 
   ngOnInit(): void {
-
+   this.getClient();
+  
   }
+
+  getClient(){
+    this.clientService.getClient().subscribe(data => {
+        this.clients = data.content;
+        console.log("trazendo aqui", this.clients);
+      }
+    );
+  }
+
   navigateToClientCreate(): void {
     this.router.navigate(['/client/create'])
   }

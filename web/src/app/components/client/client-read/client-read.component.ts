@@ -11,8 +11,9 @@ import { Client } from '../client.model';
 export class ClientReadComponent implements OnInit {
 
   clients!: Client[];
+  displayedColumns = ['id', 'name', 'email', 'action']
 
-  constructor(public clientService: ClientService, private router: Router) { }
+  constructor(private clientService: ClientService, private router: Router) { }
 
  
   ngOnInit(): void {

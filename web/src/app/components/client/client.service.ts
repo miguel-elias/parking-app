@@ -33,4 +33,19 @@ export class ClientService {
   getClient(): Observable<ResponsePageable> {
     return this.HttpClient.get<ResponsePageable>(this.baseUrl)
   }
+
+  getById(id: string): Observable<Client> {
+    const url = `${this.baseUrl}/${id}`
+    return this.HttpClient.get<Client>(url);
+  }
+
+  update(client: Client): Observable<Client> {
+    const url = `${this.baseUrl}/${client.id}`
+    return this.HttpClient.put<Client>(url, client);
+  }
+
+  delete(client: Client): Observable<Client> {
+    const url = `${this.baseUrl}/${client.id}`
+    return this.HttpClient.put<Client>(url, client);
+  }
 }

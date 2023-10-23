@@ -31,6 +31,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     ParkingDeleteComponent,
     ParkingReadComponent,
     ClientReadComponent,
-    ClientUpdateComponent
+    ClientUpdateComponent,
+    ClientDeleteComponent
   ],
   imports: [
     BrowserModule,

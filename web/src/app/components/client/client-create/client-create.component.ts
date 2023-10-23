@@ -15,7 +15,6 @@ export class ClientCreateComponent implements OnInit{
     cpf:'',
     email: '',
     phone: '',
-    // parking: '',
     apartment: '',
     block: '',
   }

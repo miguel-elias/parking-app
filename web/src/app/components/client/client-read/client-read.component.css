@@ -3,7 +3,18 @@
   width: 100%;
 }
 
-button{
+button {
   display: flexbox;
-  margin: 5px 5px 5px 930px;
+  margin: 5px 5px 15px 590px;
+}
+
+.edit {
+  margin-right: 15px;
+}
+.edit >i {
+  color: #d9cd26;
+}
+
+.delete > i {
+  color: #e35e6b;
 }

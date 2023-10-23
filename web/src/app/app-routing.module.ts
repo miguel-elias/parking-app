@@ -38,7 +38,7 @@ const routes: Routes = [
     component: ClientUpdateComponent
   },
   {
-    path: 'client/delete',
+    path: 'client/delete/:id',
     component: ClientDeleteComponent
   }
 ];

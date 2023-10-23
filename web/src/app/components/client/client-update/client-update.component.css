@@ -1,0 +1,33 @@
+.grupo-card-cadastro {
+    margin-top: 8px;
+  }
+  
+  form {
+      display:flex;
+      flex-direction: row;
+      margin-top: 5px;
+  }
+  
+  .card-title {
+      display: flex;
+      margin-left: 10px;
+  }
+  
+  .input-cadastro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .grupo-input-cadastro {
+    display: flexbox;
+    margin: 5px 5px 5px 20px;
+  
+  }
+  
+  button {
+      display: flexbox;
+      margin: 10px 0px 20px 20px;
+  }
+  
+  

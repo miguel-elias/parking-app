@@ -30,7 +30,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
-import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
@@ -48,8 +47,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ParkingDeleteComponent,
     ParkingReadComponent,
     ClientReadComponent,
-    ClientUpdateComponent,
-    LocalDateTimePipe
+    ClientUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -70,9 +68,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatSortModule,
     MatTabsModule
   ],
-  providers: [
-    LocalDateTimePipe
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

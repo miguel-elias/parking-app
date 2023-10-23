@@ -1,5 +1,6 @@
 # Parking-app
   Projeto desenvolvido com as soluções:
+  
     Angular: v15.0.0
     
     Nodejs: v18.15.0

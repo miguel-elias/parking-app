@@ -58,8 +58,8 @@ export class ClientService {
     );
   }
 
-  delete(id: any): Observable<Client> {
-    const url = `${this.baseUrl}/${id}`;
+  delete(client: Client): Observable<Client> {
+    const url = `${this.baseUrl}/${client.id}`;
     return this.HttpClient.delete<Client>(url).pipe(
       map((obj) => obj),
       catchError((e)=> this.errorHandler(e))

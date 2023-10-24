@@ -1,9 +1,56 @@
 
 <div style="margin-top: 80px; margin-left: 8px; margin-right: 8px;" class= "mat-elevation-z8">
-    <mat-card class="grupo-card-cadastro">
-      <mat-card-title style="padding: 8px; padding-left: 8px;">Deletar Cadastro do Morador</mat-card-title>
-
-    </mat-card>
-</div>
-    
-    
+  <mat-card class="grupo-card-cadastro">
+    <mat-card-title style="padding: 8px; padding-left: 8px;">Excluir Cadastro do Morador</mat-card-title>
+      <form>
+  
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>Nome</mat-label>
+          <input class="input-cadastro" matInput placeholder="Bill Gates"
+          [(ngModel)]="client.name" name="name" disabled>
+        </mat-form-field>
+  
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>CPF</mat-label>
+          <input class="input-cadastro" matInput placeholder="123456789-00"
+          [(ngModel)]="client.cpf" name="cpf" disabled>
+        </mat-form-field>
+  
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>E-mail</mat-label>
+          <input class="input-cadastro" matInput placeholder="bill.gates@gmail.com"
+          [(ngModel)]="client.email" name="email"disabled>
+        </mat-form-field>
+      </form>
+      <form>
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>Telefone</mat-label>
+          <input class="input-cadastro" matInput placeholder="61 33472122"
+          [(ngModel)]="client.phone" name="phone"disabled>
+        </mat-form-field>
+  
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>Apartamento</mat-label>
+          <input class="input-cadastro" matInput placeholder="123"
+          [(ngModel)]="client.apartment" name="apartment"disabled>
+        </mat-form-field>
+  
+        <mat-form-field class="grupo-input-cadastro">
+          <mat-label>Bloco</mat-label>
+          <input class="input-cadastro" matInput placeholder="ABC"
+          [(ngModel)]="client.block" name="block"disabled>
+        </mat-form-field>
+    </form>
+    <div class="button-row">
+      <button mat-raised-button (click)="deleteClient()" color="accent">
+        Excluir
+      </button>
+  
+      <button mat-raised-button (click)="cancel()">
+        Cancelar
+      </button>
+    </div>
+  </mat-card>
+  </div>
+  
+  

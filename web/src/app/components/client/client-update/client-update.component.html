@@ -1,3 +1,56 @@
 
-
-<p>client-update works!</p>
+<div style="margin-top: 80px; margin-left: 8px; margin-right: 8px;" class= "mat-elevation-z8">
+    <mat-card class="grupo-card-cadastro">
+      <mat-card-title style="padding: 8px; padding-left: 8px;">Alterar Morador</mat-card-title>
+        <form>
+    
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>Nome</mat-label>
+            <input class="input-cadastro" matInput placeholder="Bill Gates"
+            [(ngModel)]="client.name" name="name">
+          </mat-form-field>
+    
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>CPF</mat-label>
+            <input class="input-cadastro" matInput placeholder="123456789-00"
+            [(ngModel)]="client.cpf" name="cpf">
+          </mat-form-field>
+    
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>E-mail</mat-label>
+            <input class="input-cadastro" matInput placeholder="bill.gates@gmail.com"
+            [(ngModel)]="client.email" name="email">
+          </mat-form-field>
+        </form>
+        <form>
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>Telefone</mat-label>
+            <input class="input-cadastro" matInput placeholder="61 33472122"
+            [(ngModel)]="client.phone" name="phone">
+          </mat-form-field>
+    
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>Apartamento</mat-label>
+            <input class="input-cadastro" matInput placeholder="123"
+            [(ngModel)]="client.apartment" name="apartment">
+          </mat-form-field>
+    
+          <mat-form-field class="grupo-input-cadastro">
+            <mat-label>Bloco</mat-label>
+            <input class="input-cadastro" matInput placeholder="ABC"
+            [(ngModel)]="client.block" name="block">
+          </mat-form-field>
+      </form>
+      <div class="button-row">
+        <button mat-raised-button (click)="updateClient()" color="primary">
+          Atualizar
+        </button>
+    
+        <button mat-raised-button (click)="cancel()">
+          Cancelar
+        </button>
+      </div>
+    </mat-card>
+    </div>
+    
+    

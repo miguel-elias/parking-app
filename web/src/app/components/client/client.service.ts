@@ -42,7 +42,7 @@ export class ClientService {
     );
   }
 
-  getById(id: string): Observable<Client> {
+  getById(id: any): Observable<Client> {
     const url = `${this.baseUrl}/${id}`;
     return this.HttpClient.get<Client>(url).pipe(
       map((obj)=> obj),
@@ -58,7 +58,7 @@ export class ClientService {
     );
   }
 
-  delete(id: number): Observable<Client> {
+  delete(id: any): Observable<Client> {
     const url = `${this.baseUrl}/${id}`;
     return this.HttpClient.delete<Client>(url).pipe(
       map((obj) => obj),

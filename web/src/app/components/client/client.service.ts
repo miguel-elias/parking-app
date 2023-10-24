@@ -9,7 +9,6 @@ import { map, catchError } from "rxjs/operators";
   providedIn: 'root'
 })
 export class ClientService {
-  [x: string]: any;
 
   baseUrl = "http://localhost:8080/client-parking"
 

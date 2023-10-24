@@ -12,10 +12,12 @@ export class ClientUpdateComponent implements OnInit{
 
   client!: Client;
 
-  constructor(private clientService: ClientService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private clientService: ClientService, 
+    private router: Router, 
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id");
+    const id = this.route.snapshot.paramMap.get('id');
     this.clientService.getById(id).subscribe((client) => {
     this.client = client;
     })

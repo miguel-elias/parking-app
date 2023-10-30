@@ -24,7 +24,7 @@ export class ClientDeleteComponent {
    }
 
    deleteClient(): void {
-    this.clientService.delete(this.client).subscribe(() => {
+      this.clientService.delete(this.client.id).subscribe(() => {
       this.clientService.showMessage("Exclusão com sucesso!");
       this.router.navigate(["/client"]);
     });

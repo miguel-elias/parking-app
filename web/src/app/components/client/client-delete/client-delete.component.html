@@ -7,42 +7,42 @@
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>Nome</mat-label>
           <input class="input-cadastro" matInput placeholder="Bill Gates"
-          [(ngModel)]="client.name" name="name" disabled>
+          [value]="client.name" name="name" disabled>
         </mat-form-field>
   
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>CPF</mat-label>
           <input class="input-cadastro" matInput placeholder="123456789-00"
-          [(ngModel)]="client.cpf" name="cpf" disabled>
+          [value]="client.cpf" name="cpf" disabled>
         </mat-form-field>
   
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>E-mail</mat-label>
           <input class="input-cadastro" matInput placeholder="bill.gates@gmail.com"
-          [(ngModel)]="client.email" name="email"disabled>
+          [value]="client.email" name="email"disabled>
         </mat-form-field>
       </form>
       <form>
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>Telefone</mat-label>
           <input class="input-cadastro" matInput placeholder="61 33472122"
-          [(ngModel)]="client.phone" name="phone"disabled>
+          [value]="client.phone" name="phone"disabled>
         </mat-form-field>
   
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>Apartamento</mat-label>
           <input class="input-cadastro" matInput placeholder="123"
-          [(ngModel)]="client.apartment" name="apartment"disabled>
+          [value]="client.apartment" name="apartment"disabled>
         </mat-form-field>
   
         <mat-form-field class="grupo-input-cadastro">
           <mat-label>Bloco</mat-label>
           <input class="input-cadastro" matInput placeholder="ABC"
-          [(ngModel)]="client.block" name="block"disabled>
+          [value]="client.block" name="block"disabled>
         </mat-form-field>
     </form>
     <div class="button-row">
-      <button mat-raised-button (click)="deleteClient()" color="accent">
+      <button mat-raised-button (click)="deleteClient()" color="warn">
         Excluir
       </button>
   

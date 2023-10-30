@@ -6,11 +6,11 @@ import { Client } from './client.model';
 import { ResponsePageable } from 'src/app/shared/model/responsePageable.model';
 import { map, catchError } from "rxjs/operators";
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ClientService {
 
-  baseUrl = "http://localhost:8080/client-parking"
+  baseUrl = "http://localhost:8080/client-parking";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -21,11 +21,11 @@ export class ClientService {
   constructor(private HttpClient: HttpClient, private snackBar: MatSnackBar) { }
   
   showMessage(msg: string, isError: boolean = false): void {
-    this.snackBar.open(msg, "X", {
+    this.snackBar.open(msg,"X", {
       duration: 5000,
-      horizontalPosition: "right",
+      horizontalPosition: "center",
       verticalPosition: "top",
-      panelClass: isError ? ["msg-error"] : ["msg-success"],
+      panelClass: isError? ["msg-error"] : ["msg-success"],
     });
   }
   create(client: Client): Observable<Client> {
@@ -58,8 +58,8 @@ export class ClientService {
     );
   }
 
-  delete(client: Client): Observable<Client> {
-    const url = `${this.baseUrl}/${client.id}`;
+  delete(id: number): Observable<Client> {
+    const url = `${this.baseUrl}/${id}`;
     return this.HttpClient.delete<Client>(url).pipe(
       map((obj) => obj),
       catchError((e)=> this.errorHandler(e))
@@ -67,7 +67,7 @@ export class ClientService {
   }
 
   errorHandler(e: any): Observable<any> {
-    this.showMessage("Ocorreu um erro!", true);
+    this.showMessage("Ocorreu um erro!", false);
     return EMPTY;
   }
 }

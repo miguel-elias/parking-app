@@ -12,12 +12,13 @@ export class ParkingService {
   baseUrl = "http://localhost:8080/parking-spot"
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
-  showMessage(msg: string): void{
-    this.snackBar.open(msg, 'X', {
-      duration: 3000,
-      horizontalPosition: "right",
-      verticalPosition: "top"
-    })
+  showMessage(msg: string, isError: boolean = false): void {
+    this.snackBar.open(msg,"", {
+      duration: 5000,
+      horizontalPosition: "center",
+      verticalPosition: "top",
+      panelClass: isError ? ["msg-error"] : ["msg-success"],
+    });
   }
   create(parking: Parking): Observable<Parking> {
     return this.http.post<Parking>(this.baseUrl, parking)
